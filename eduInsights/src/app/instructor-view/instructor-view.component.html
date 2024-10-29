@@ -1,0 +1,32 @@
+<h2>Hello, Instructor!</h2>
+<div id="hl"></div>
+<div id="body">
+  <div class="container">
+    <p>For Existing Classes</p>
+    <label  for="existingClass">Please Input An Existing Class Code Here</label>
+    <br>
+    <input type="number" id="existingClass" [(ngModel)] = "class.code">
+    <br>
+    <button id="submit">Submit</button> <!--(click) = "displayResponses()"-->
+
+    <div *ngIf ="submitted">
+      <p>{{ class.responses }}</p>
+    </div>
+  </div>
+
+  <div id="vl"></div>
+
+  <div class="container">
+    <p>For New Classes</p>
+    <label for="generateCode">To Generate a New Class Code</label>
+    <br>
+    <button (click) = "generateCode()" id="generateCode">Generate Code</button>
+
+    <div *ngIf="class.code !== 0">
+      <p id="codeHolder">{{ class.code }}</p>
+    </div>
+  </div>
+</div>
+
+
+

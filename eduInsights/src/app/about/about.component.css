@@ -1,0 +1,44 @@
+#body {
+  display: flex;
+  flex-direction: row;
+}
+
+.container{
+  width: 50%;
+  padding-left: 80px;
+}
+
+h2{
+  margin-left: 85px;
+  font-size: 50px;
+  color: #202C47;
+}
+
+h4{
+  font-size: 30px;
+  color: #202C47;
+}
+
+.headings {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  padding-right: 30px;
+}
+
+#vl {
+  border-left: solid 2px lightgray;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+#hl {
+  border-bottom: solid 2px lightgray;
+  width: 90%;
+  margin-left: 80px;
+}
+
+

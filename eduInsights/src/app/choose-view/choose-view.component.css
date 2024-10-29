@@ -1,0 +1,37 @@
+h2 {
+  color: #212c47;
+  font-size: 50px;
+}
+
+p {
+  color: black;
+  font-size: 30px;
+}
+
+#container {
+
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  height: 100px;
+  width: 200px;
+  margin-right: 50px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #88baf3;
+  position: relative;
+  left: 11%;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #686cd6;
+  transition: background-color 500ms;
+}
+
+button:active {
+  background-color: #ccb4e7;
+}

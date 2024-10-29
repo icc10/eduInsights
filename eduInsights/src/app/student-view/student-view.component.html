@@ -1,0 +1,28 @@
+<h2>Hello, Student!</h2>
+<div id="hl"></div>
+<div id="body">
+  <div class="container">
+    <p>For Existing Classes</p>
+    <label  for="existingClass">Please Input An Existing Class Code Here</label>
+    <br>
+    <input type="number" id="existingClass" [(ngModel)] = "class.code">
+    <!--    <button (click) = "displayResponses()" id="submit">Submit</button>-->
+
+  </div>
+    <div *ngIf ="gotOpening" id="vl"></div>
+
+  <div *ngIf="gotOpening" class="container">
+    <p>Submit a Response</p>
+    <label for="studentResponse">Enter Your Response Here:</label>
+    <input id="studentResponse" type="text">
+    <br>
+<!--      <button id="submit" (click)="saveClass()">Submit</button>-->
+
+    <div *ngIf ="gotOpening">
+      <p>{{ class.responses }}</p>
+    </div>
+  </div>
+</div>
+
+
+
