@@ -1,4 +1,4 @@
-#body {
+.body {
   display: flex;
   flex-direction: row;
 }
@@ -8,8 +8,14 @@
   padding-left: 80px;
 }
 
+#AIcontainer {
+  width: 100%;
+  padding-left: 600px;
+}
+
 h2{
   margin-left: 85px;
+  margin-bottom: 0;
   font-size: 50px;
   color: #202C47;
 }
@@ -54,10 +60,11 @@ button {
   margin-top: 30px;
 }
 
-#hl {
+.hl {
   border-bottom: solid 2px lightgray;
   width: 90%;
   margin-left: 80px;
+  margin-top: 30px;
 }
 
 #submit {
@@ -90,6 +97,18 @@ button:active {
 
 #submit:active {
   background-color: #ccb4e7;
+}
+
+#suggestionsHolder {
+
+}
+
+#aiLeft {
+  padding-left: 400px;
+}
+#aiRight {
+  display: inline;
+  float:left;
 }
 
 

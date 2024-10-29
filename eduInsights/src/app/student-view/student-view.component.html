@@ -9,16 +9,16 @@
     <!--    <button (click) = "displayResponses()" id="submit">Submit</button>-->
 
   </div>
-    <div *ngIf ="gotOpening" id="vl"></div>
+    <div *ngIf ="gotClass" id="vl"></div>
 
-  <div *ngIf="gotOpening" class="container">
+  <div *ngIf="gotClass" class="container">
     <p>Submit a Response</p>
     <label for="studentResponse">Enter Your Response Here:</label>
     <input id="studentResponse" type="text">
     <br>
 <!--      <button id="submit" (click)="saveClass()">Submit</button>-->
 
-    <div *ngIf ="gotOpening">
+    <div *ngIf ="gotClass">
       <p>{{ class.responses }}</p>
     </div>
   </div>

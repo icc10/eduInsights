@@ -1,6 +1,6 @@
 <h2>Hello, Instructor!</h2>
-<div id="hl"></div>
-<div id="body">
+<div class="hl"></div>
+<div class="body">
   <div class="container">
     <p>For Existing Classes</p>
     <label  for="existingClass">Please Input An Existing Class Code Here</label>
@@ -25,6 +25,21 @@
     <div *ngIf="class.code !== 0">
       <p id="codeHolder">{{ class.code }}</p>
     </div>
+  </div>
+</div>
+
+<div class="hl"></div>
+
+<div class="body">
+  <div class="container" id="aiLeft">
+    <p>Suggestions</p>
+    <label for="generateResponses">To Generate Suggestions</label>
+    <br>
+    <button (click) = "generateSuggestions()" id="generateResponses">Generate Suggestions</button>
+  </div>
+
+  <div class="container" id="aiRight" *ngIf="class.suggestions === ''">
+    <p id="suggestionsHolder">Sugguestions: {{class.suggestions}}</p>
   </div>
 </div>
 

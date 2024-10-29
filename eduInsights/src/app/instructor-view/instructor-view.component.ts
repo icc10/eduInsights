@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgIf} from '@angular/common';
 import { Class } from '../entities/class';
-//import { ClassService } from '../services/class.service';
+//import { SuggestionsService } from '../services/suggestions.service';
 
 @Component({
   selector: 'app-instructor-view',
@@ -10,14 +10,16 @@ import { Class } from '../entities/class';
 })
 export class InstructorViewComponent {
   submitted : boolean = false;
+  str : string = "hi";
 
 
   class: Class = {
     code: 0,
     responses: [],
+    suggestions: '',
   };
 
-  //constructor(private classService: ClassService){}
+  //constructor(private suggestionsService: SuggestionsService){}
 
 
 
@@ -32,6 +34,7 @@ export class InstructorViewComponent {
 //     const data = {
 //       code: this.class.code,
 //       responses: this.class.responses,
+//       suggestions: this.class.suggestions,
 //     };
 //
 //     this.classService.create(data).
@@ -57,4 +60,15 @@ export class InstructorViewComponent {
 //         error: (e) => console.error(e)
 //       });
 //   }
+
+    generateSuggestions(): void {
+//       this.suggestionsServices.get(this.class.responses)
+//         .subscribe({
+//           next: (data) => {
+//            this.class.suggestions = data[0];
+//           },
+//           error: (e) => console.error(e)
+//         });
+    }
+
 }

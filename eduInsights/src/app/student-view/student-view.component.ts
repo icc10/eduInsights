@@ -10,18 +10,19 @@ import { Class } from '../entities/class';
 })
 export class StudentViewComponent {
   submitted : boolean = false;
-  gotOpening: boolean = false;
+  gotClass: boolean = false;
 
   class: Class = {
       code: 0,
       responses: [],
+      suggestions: '',
     };
 
 
 
   //constructor(private classService: ClassService){}
 
-  //   getOpening(id: string): void {
+  //   getClass(id: string): void {
   //     this.classService.get(id)
   //       .subscribe({
   //         next: (data) => {
